@@ -1,15 +1,21 @@
 <template>
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+    <header/>
+    <vertical-nav/>
+    <home/>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import VerticalNav from './components/VerticalNav.vue'
+import Home from './Home.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Home,
+    VerticalNav
   }
 })
 </script>
