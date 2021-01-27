@@ -1,7 +1,7 @@
 <template>
     <header/>
     <vertical-nav/>
-    <home/>
+    <router-view/>
 </template>
 
 <script lang="ts">

@@ -4,7 +4,7 @@
         <h1 class="font-body text-custom-cyan font-normal text-5xl text-center">Que voulez vous faire ?</h1>
 		<div class="relative place-content-center text-center  mx-32 mt-10">
 			<button class="rounded bg-custom-bordeau px-4 py-2 mr-4 text-white text-sm">Rechercher des partenaires</button>
-			<button class="rounded bg-custom-bordeau px-4 py-2 text-white ml-4 text-sm">Se rendre Dispo !</button>
+			<router-link :to="{name: 'Dispo'}" class="rounded bg-custom-bordeau px-4 py-2 text-white ml-4 text-sm">Se rendre Dispo !</router-link>
 		</div>
     </section>
 </template>
