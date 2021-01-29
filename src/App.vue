@@ -8,13 +8,11 @@
 import { defineComponent } from 'vue'
 import Header from './components/Header.vue'
 import VerticalNav from './components/VerticalNav.vue'
-import Home from './Home.vue'
 
 export default defineComponent({
   name: 'App',
   components: {
     Header,
-    Home,
     VerticalNav
   }
 })
