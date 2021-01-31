@@ -1,5 +1,5 @@
 <template>
-    <header class="fixed w-full z-10 flex-none py-3 pl-16 sm:pr-4 md:pr-3.5 top-0 flex items-center space-x-4 bg-customblue-200">
+    <div class="fixed w-full z-10 flex-none py-3 pl-16 sm:pr-4 md:pr-3.5 top-0 flex items-center space-x-4 bg-customblue-200">
         <div class="flex-auto flex items-center min-w-0 space-x-5 ml-4">
             <svg width="171" height="21" fill="none" class="flex-none text-black dark:text-white">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M16.414.441c-4.377 0-7.113 2.189-8.207 6.566 1.642-2.188 3.556-3.01 5.745-2.462 1.249.312 2.141 1.218 3.13 2.22 1.608 1.634 3.471 3.525 7.54 3.525 4.376 0 7.112-2.189 8.206-6.566-1.641 2.189-3.556 3.01-5.745 2.462-1.248-.312-2.14-1.218-3.129-2.22C22.345 2.332 20.482.44 16.414.44zM8.207 10.29c-4.377 0-7.113 2.189-8.207 6.566 1.641-2.189 3.556-3.01 5.745-2.463 1.249.313 2.141 1.218 3.13 2.221 1.608 1.634 3.471 3.524 7.54 3.524 4.376 0 7.112-2.188 8.206-6.565-1.641 2.188-3.556 3.009-5.745 2.462-1.248-.312-2.14-1.218-3.129-2.22-1.61-1.634-3.472-3.525-7.54-3.525z" fill="#16BDCA"></path>
@@ -29,7 +29,7 @@
             <div class="hidden md:block w-px h-8 bg-custom-cyan dark:bg-custom-cyan"></div>
             <button type="button" class="group rounded-md border border-transparent focus:bg-gray-100 focus:outline-none dark:focus:bg-black dark:focus:border-gray-800 text-gray-400"><img src="../assets/2021-01-22_21h54_27.png" class="w-12"><span class="dark:hidden sr-only">Switch to dark theme</span></button>
         </div>
-    </header>
+    </div>
 </template>
 
 <script lang="ts">
@@ -40,6 +40,7 @@ export default defineComponent({
   props: {
   },
   setup: () => {
+    console.log("ytoto")
     const count = ref(0)
     return { count }
   }

@@ -9,6 +9,9 @@ module.exports = {
                 'customblue-100': '#22304d',
                 'custom-bordeau': '#A71C5D',
                 'custom-cyan': '#05dbf2',
+            },
+            screens: {
+                'hd': '1920px',
             }
         },
         fontFamily: {

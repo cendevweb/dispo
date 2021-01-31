@@ -49,7 +49,7 @@
 
             Highlighted: "text-white", Not Highlighted: "text-indigo-600"
           -->
-          <span class="absolute inset-y-0 right-0 flex items-center pr-4">
+          <span class="absolute inset-y-0 right-0 flex items- pr-4">
             <!-- Heroicon name: check -->
             <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
               <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
@@ -103,33 +103,33 @@
     </div>
   </div>
   <div class="mt-48 ml-20 p-5 w-40 bg-white rounded-lg shadow-xl">
-  <div class="flex">
-    <label id="listbox-label" class="block text-sm font-medium text-white">
-        Until :
-    </label>
-    <select name="hours" class="bg-transparent text-xl appearance-none outline-none">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-      <option value="11">10</option>
-      <option value="12">12</option>
-    </select>
-    <span class="text-xl mr-3">:</span>
-    <select name="minutes" class="bg-transparent text-xl appearance-none outline-none mr-4">
-      <option value="0">00</option>
-      <option value="30">30</option>
-    </select>
-    <select name="ampm" class="bg-transparent text-xl appearance-none outline-none">
-      <option value="am">AM</option>
-      <option value="pm">PM</option>
-    </select>
+    <div class="flex">
+      <label id="listbox-label" class="block text-sm font-medium text-white">
+          Until :
+      </label>
+      <select name="hours" class="bg-transparent text-xl appearance-none outline-none">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">10</option>
+        <option value="12">12</option>
+      </select>
+      <span class="text-xl mr-3">:</span>
+      <select name="minutes" class="bg-transparent text-xl appearance-none outline-none mr-4">
+        <option value="0">00</option>
+        <option value="30">30</option>
+      </select>
+      <select name="ampm" class="bg-transparent text-xl appearance-none outline-none">
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
+      </select>
   </div>
 </div>
 </template>
