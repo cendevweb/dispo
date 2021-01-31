@@ -1,6 +1,10 @@
 <template>
-    <header/>
-    <vertical-nav/>
+    <header
+      v-if="isLoggedIn"
+    />
+    <vertical-nav
+      v-if="isLoggedIn"
+    />
     <router-view/>
 </template>
 
@@ -14,7 +18,12 @@ export default defineComponent({
   components: {
     Header,
     VerticalNav
-  }
+  },
+  computed: {
+    isLoggedin() {
+      return !!localStorage.getItem('jwt')
+    },
+  },
 })
 </script>
 
