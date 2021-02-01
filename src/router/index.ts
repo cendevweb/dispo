@@ -47,7 +47,7 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   if(to.matched.some(record => record.meta.requiresAuth)) {
-      if (localStorage.getItem('jwt') == null) {
+      if (localStorage.getItem('user') == null) {
           next({
               path: '/login',
               params: { nextUrl: to.fullPath }
@@ -56,7 +56,7 @@ router.beforeEach((to, from, next) => {
         next()
       }
   } else if(to.matched.some(record => record.meta.guest)) {
-      if(localStorage.getItem('jwt') == null){
+      if(localStorage.getItem('user') == null){
           next()
       }
       else{
